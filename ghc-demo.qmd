@@ -3,7 +3,7 @@ title: GHC Demo Assignment
 subtitle: CSC 110 - Data Science & Society (Fall 2025)
 author: Hannah Olivera
 format:
-  pdf:
+  html:
    theme: cosmo
    toc: true
    toc-depth: 1
