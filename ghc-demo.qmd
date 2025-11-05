@@ -1,0 +1,118 @@
+---
+title: GHC Demo Assignment
+subtitle: CSC 110 - Data Science & Society (Fall 2025)
+author: Hannah Olivera
+format:
+  pdf:
+   theme: cosmo
+   toc: true
+   toc-depth: 1
+   fig-width: 8
+   fig-height: 5
+---
+
+```{r}
+
+#|include: false
+library(tidyverse)
+
+```
+
+## Homework
+```{r, fig.cap = "Fuel mileage scatterplot", echo=FALSE, fig.height=4}
+
+ggplot(
+  data = mpg,
+  aes(
+    x = displ,
+    y = hwy
+  )
+) + 
+geom_point() +
+labs(
+  title = "The Relation Between Engine Size and Highway Fuel Mileage",
+  x = "Engine Size (Displacement)",
+  y = "Highway Fuel Mileage"
+) 
+
+```
+
+### Question 5
+
+Link to Davidson College Website -> <https://davidson.edu>
+
+List of classes:
+
+* Language requirement
+  + ARB 101
+  + ARB 101 AT
+* Math WoK
+  + CSC 110
+    - also applies for JEC credit
+* JEC Credit
+  + CSC 110
+  + COMS 311
+* Music involvement
+  + MUS 245
+  + DCSO (considered a credited involvement, so I consider it a class)
+  + Violin lessons (scholarship, but still have to add to Webtree, so I consider it a class)
+  
+Top 3 movies:
+
+:::{.callout-note}
+These questions are crazy difficult for me. My answers constantly change, so these answers are based off my vibe right now, at after-midnight on a random Wednesday morning.
+:::
+
+1. Interstellar
+   - It's not as basic as it sounds. Christopher Nolan and the musical master that is Hans Zimmer? C'mon, no-brainer.
+2. The Usual Suspects [^1]
+3. Thor: Ragnarok
+   - More nostalgic reasons
+
+[^1]: The opening scene with the lineup is an actual blooper, the actors were not supposed to laugh. And this is one of Benicio del Toro's first movies, so his accent and speech impedement is more obviously noticed in this movie.
+
+The quadratic formula is:
+
+:::{.callout-tip}
+Make sure you know how to add all of the mathematical operations and components into the equation, like fractions, add/subtract symbol, square roots, and exponents.
+:::
+
+$$
+x = \frac{{-b \pm \sqrt{{b^2 - 4ac}}}}{{2a}}
+$$
+
+My education plan
+```{mermaid}
+flowchart LR
+  A("Graduation") --> B{"College Selection"}
+  B --> C["Davidson College"]
+  B --> D["UNC Chapel Hill"]
+  B --> E["Duke University"]
+  B --> F["UVA"]
+  C --> G["Psychology"]
+  C --> H["Pre-Law"]
+  C --> I["Forensic Psychology and Criminology"]
+  
+```
+
+::: {.callout-important collapse="true"}
+Both of my parents were in the legal system and law enforcement, so it feels fitting to want to do something in a similar field as them. The only difference is I want to go to a higher level, ie. SBI or FBI, and in science.
+:::
+
+> Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.
+
+{{< pagebreak >}}
+
+## Reflection
+
+### Technique 1: Mermaid Flow Charts
+
+When we first discussed mermaid charts in this class, I was very confused with them, but that was because I struggled to render exercises in html. As I created the chart regarding my education, I found it almost like a logic puzzle that I was creating and solving at the same time. In future projects, I think it will be useful to show the progression of data and how different variables reflect in others. Specifically, I think this will be useful in my final project to demonstrate how different events impact LGBTQ+ youth and adults, especially regarding mental health resources and suicide rates. It could also be useful in helping us understand and demonstrate the mutation of our data. An issue arises considering it can be difficult to track; however, I think drawing the flow of data out on a sheet of paper will help with any uncertainty.
+
+### Blockquote
+
+Given the correct design, I think `blockquotes` can be very useful in drawing an audiences' attention to a specific word or event. I believe that our final project will benefit greatly from this technique. With our topic being such a heavy **and** under-researched area, I think quotes or statistics would be very insightful to bring the reader's attention to. With various themes and colors, the blockquote technique can be perfect for important information.
+
+### Links
+
+Inserting links into an `html` document or website can be very useful, but also hurtful. Positively, websites can prevent authors from getting off topic of the main investigation, and instead invites readers who are interested to find out more of a topic or data. It also produces and exact citation to a source of information. Counteractively, in the same way the links can help, they can prove to be a disadvantage as the author can not expand as much on the topic as they should, instead leaving vital information out of the investigation. In our final project, I think linking websites might prove useful to different case studies, statistics, or articles regarding LGBTQ+ mental health and suicide rates, but we will have to be cautious to not get off topic nor accidentally omit information. 
